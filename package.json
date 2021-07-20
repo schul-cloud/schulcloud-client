@@ -126,7 +126,7 @@
 		"redis": "^2.8.0",
 		"request": "^2.79.0",
 		"request-promise": "^4.1.1",
-		"sanitize-html": "^1.23.0",
+		"sanitize-html": "^2.3.2",
 		"serve-favicon": "^2.5.0",
 		"shortid": "^2.2.8",
 		"showdown": "^1.9.1",
