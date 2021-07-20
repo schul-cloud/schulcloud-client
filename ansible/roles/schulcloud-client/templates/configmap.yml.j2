@@ -135,7 +135,7 @@ data:
   # Lernstore
   FEATURE_LERNSTORE_ENABLED: "{{ FEATURE_LERNSTORE_ENABLED|default("false", true) }}"
 {% if FEATURE_LERNSTORE_ENABLED is defined and FEATURE_LERNSTORE_ENABLED == "true" %}
-  LERNSTORE_MODE: {{ LERNSTORE_MODE|default("LEGACY", true) }}
+  LERNSTORE_MODE: {{ LERNSTORE_MODE|default("EDUSHARING", true) }}
 {% else %}
   LERNSTORE_MODE: "DISABLED"
 {% endif %}
