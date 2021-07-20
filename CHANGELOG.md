@@ -23,6 +23,7 @@ Allowed Types of change: `Added`, `Changed`, `Deprecated`, `Removed`, `Fixed`, `
 
 -   SC-9196 - fixed submissions overview
 -   SC-7393 - adds legal text about consent on first login on n21
+-   SC-9123 - changed texts on brb landing page
 -   SC-8448 - passes merlinReference ID to server for Merlin items
 -   SC-9018; SC-9003 - replaces usage of api /schools enpoint for schoolsList in login & registration
 -   SC-9101 - sync & sort lang files

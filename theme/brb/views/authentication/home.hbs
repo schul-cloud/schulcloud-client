@@ -39,6 +39,7 @@ mode="append"}}
 
 					<h4>{{$t "landingPage.label.welcome" (dict "shortTitle" theme.short_title)}}</h4>
 					<p>{{{$t "landingPage.brb.text.welcome" (dict "shortTitle" theme.short_title)}}}</p>
+					<p>{{{$t "landingPage.brb.text.welcome_2" (dict "shortTitle" theme.short_title)}}}</p>
 					<h4>{{$t "landingPage.brb.headline.registration" (dict "shortTitle" theme.short_title)}}</h4>
 					<p>{{{$t "landingPage.brb.text.registration" (dict "shortTitle" theme.short_title)}}}</p>
 					<h4>{{$t "landingPage.brb.headline.valueStatement" (dict "shortTitle" theme.short_title)}}</h4>
@@ -47,8 +48,6 @@ mode="append"}}
 						<img src="https://schul-cloud-hpi.s3.hidrive.strato.com/brb/images/HPI_Schul_Cloud_Brandenburg_Schueler_2019.jpg"
 							alt="{{$t " landingPage.brb.img_alt.text" (dict "shortTitle" theme.short_title)}} " 
 							/>
-						<br>{{{$t "home.text.moreInformation"}}} <a href="{{theme.documents.globalFiles.BeschreibungDerSchulCloud}}"
-							target="_blank" rel="noopener">{{{$t "landingPage.brb.link.text"}}}</a>
 					</p>
 					<h4>{{$t "landingPage.brb.headline.access" (dict "shortTitle" theme.short_title)}}</h4>
 					<p>{{$t "landingPage.brb.text.access" (dict "shortTitle" theme.short_title)}}</p>
@@ -68,24 +67,28 @@ mode="append"}}
 				<div class="card-block">
 					<h4 class="card-title">Projektdurchführung</h4>
 					<div class="card-text partner-img">
-						<a href="https://hpi.de/open-campus/hpi-initiativen/schulcloud.html" target="_blank"
-							rel="noopener">
-							<img src="https://schul-cloud-hpi.s3.hidrive.strato.com/images/partner/hpi-logo.jpg"
-								alt="Logo HPI" class="img-fluid">
-						</a>
 						<a href="https://mbjs.brandenburg.de" target="_blank" rel="noopener">
 							<img src="https://schul-cloud-hpi.s3.hidrive.strato.com/brb/images/mbjs.png" alt="Logo MBJS"
-								class="img-fluid">
-						</a>
-						<a href="https://www.ilb.de/de/wir-ueber-uns/beteiligungen/weitere-beteiligungen/digitalagentur-brandenburg-gmbh/"
-							target="_blank" rel="noopener">
-							<img src="https://schul-cloud-hpi.s3.hidrive.strato.com/brb/images/daab.png" alt="Logo DAAB"
 								class="img-fluid">
 						</a>
 						<a href="https://lisum.berlin-brandenburg.de/lisum/" target="_blank" rel="noopener">
 							<img src="https://schul-cloud-hpi.s3.hidrive.strato.com/brb/images/lisum.png"
 								alt="Logo LISUM" class="img-fluid">
 						</a>
+						<a aria-label="Dataport Logo" target="_blank" rel="noopener" href="https://www.dataport.de/" alt="Logo Dataport">
+                            <svg class="img-fluid SectionHeader-logo u-scalingInlineSVG" focusable="false" role="img" aria-hidden="true" viewBox="0 0 173 60" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin slice" style="padding-top: 5%;">
+                                <g stroke="none" fill="none" fill-rule="evenodd">
+                                    <g class="HeaderLogo-small" transform="translate(120.066900, 0.000000)">
+                                        <rect x="0" y="0" width="22" height="60"></rect>
+                                        <path d="M20.0264,16.0313 C20.7786,16.0313 21.1547,16.4063 21.1547,17.1563 L21.1547,18.0001 C21.1547,18.7501 20.7787,19.1251 20.0264,19.1251 L1.9743,19.1251 C1.2221,19.125 0.846,18.75 0.846,18 L0.846,17.1562 C0.846,16.4062 1.2221,16.0312 1.9743,16.0312 L20.0264,16.0312 L20.0264,16.0313 Z M20.0264,8.0626 C20.7786,8.0626 21.1547,8.4376 21.1547,9.1876 L21.1547,10.0313 C21.1547,10.7813 20.7787,11.1563 20.0264,11.1563 L1.9743,11.1563 C1.2221,11.1563 0.846,10.7813 0.846,10.0313 L0.846,9.1876 C0.846,8.4376 1.2221,8.0626 1.9743,8.0626 L20.0264,8.0626 Z M20.0264,0 C20.7786,0 21.1547,0.375 21.1547,1.125 L21.1547,1.9688 C21.1547,2.7188 20.7787,3.0938 20.0264,3.0938 L1.9743,3.0938 C1.2221,3.0938 0.846,2.7188 0.846,1.9688 L0.846,1.125 C0.846,0.375 1.2221,0 1.9743,0 L20.0264,0 Z M20.0264,56.0623 C20.7786,56.0623 21.1547,56.4373 21.1547,57.1873 L21.1547,58.0311 C21.1547,58.7811 20.7787,59.1561 20.0264,59.1561 L1.9743,59.1561 C1.2221,59.1561 0.846,58.7811 0.846,58.0311 L0.846,57.1873 C0.846,56.4373 1.2221,56.0623 1.9743,56.0623 L20.0264,56.0623 Z M20.0264,47.9997 C20.7786,47.9997 21.1547,48.3747 21.1547,49.1247 L21.1547,49.9685 C21.1547,50.7185 20.7787,51.0935 20.0264,51.0935 L1.9743,51.0935 C1.2221,51.0935 0.846,50.7185 0.846,49.9685 L0.846,49.1247 C0.846,48.3747 1.2221,47.9997 1.9743,47.9997 L20.0264,47.9997 Z" fill="#9E292B"></path>
+                                        <path d="M0,30.281 C0,27.0935 1.5044,25.5935 4.7011,25.5935 L17.3941,25.5935 C20.5899,25.5935 22.0952,27.0935 22.0952,30.281 L22.0952,36.9372 C22.0952,40.1247 20.5899,41.6247 17.3942,41.6247 L4.7011,41.6247 C1.5043,41.6247 0,40.1247 0,36.9372 L0,30.281 Z M5.2653,28.781 C4.1371,28.781 3.6669,29.3435 3.6669,30.3747 L3.6669,36.8435 C3.6669,37.9685 4.232,38.4372 5.2653,38.4372 L16.7361,38.4372 C17.8643,38.4372 18.3344,37.8747 18.3344,36.8435 L18.3344,30.3747 C18.3344,29.2497 17.7694,28.781 16.7361,28.781 L5.2653,28.781 Z" fill="#54616E"></path>
+                                    </g>
+                                    <g class="HeaderLogo-big" transform="translate(0.000000, 19.781000)" fill="#54616E">
+                                        <path d="M158.1455,8.9998 L152.6922,8.9998 C151.564,8.9998 151.0939,9.5623 151.0939,10.5936 L151.0939,21.8436 L147.427,21.8436 L147.427,10.4998 C147.427,7.3123 148.9323,5.8123 152.1281,5.8123 L158.2395,5.8123 L158.1455,8.9998 Z M63.2777,18.6563 L63.2777,21.7501 L57.8244,21.7501 C54.6277,21.7501 53.1234,20.2501 53.1234,17.0626 L53.1234,2.3438 L56.7902,2.3438 L56.7902,5.8126 L62.8066,5.8126 L62.8066,8.9063 L56.7902,8.9063 L56.7902,17.0626 C56.7902,18.1876 57.3543,18.6563 58.3876,18.6563 L63.2777,18.6563 Z M172.3425,18.6563 L172.3425,21.7501 L166.8892,21.7501 C163.6925,21.7501 162.1882,20.2501 162.1882,17.0626 L162.1882,2.3438 L165.855,2.3438 L165.855,5.8126 L171.8714,5.8126 L171.8714,8.9063 L165.855,8.9063 L165.855,17.0626 C165.855,18.1876 166.4191,18.6563 167.4524,18.6563 L172.3425,18.6563 Z M17.958,5.8126 L17.958,0 L21.625,0 L21.625,21.75 L4.701,21.75 C1.5043,21.75 0,20.25 0,17.0626 L0,10.4063 C0,7.2188 1.5043,5.7188 4.701,5.7188 L17.958,5.8126 Z M70.9872,21.8438 C67.7904,21.8438 66.2861,20.3438 66.2861,17.1562 L66.2861,16.3125 C66.2861,13.125 67.7904,11.625 70.9871,11.625 L84.2442,11.625 L84.2442,10.5 C84.2442,9.375 83.6801,8.9062 82.6468,8.9062 L69.8589,8.9062 L69.8589,5.8125 L83.304,5.8125 C86.5008,5.8125 88.0051,7.3125 88.0051,10.5 L88.0051,21.8438 L70.9871,21.8438 L70.9872,21.8438 Z M97.2196,21.8436 L97.2196,27.9373 L93.5528,27.9373 L93.5528,5.8123 L110.3826,5.8123 C113.5784,5.8123 115.0837,7.3123 115.0837,10.4998 L115.0837,17.1561 C115.0837,20.3436 113.5784,21.8436 110.3827,21.8436 L97.2196,21.8436 Z M30.8402,21.8438 C27.6444,21.8438 26.1391,20.3438 26.1391,17.1562 L26.1391,16.3125 C26.1391,13.125 27.6444,11.625 30.8401,11.625 L44.0972,11.625 L44.0972,10.5 C44.0972,9.375 43.5322,8.9062 42.4989,8.9062 L29.7109,8.9062 L29.7109,5.8125 L43.157,5.8125 C46.3528,5.8125 47.8581,7.3125 47.8581,10.5 L47.8581,21.8438 L30.8401,21.8438 L30.8402,21.8438 Z M70.0469,17.1562 C70.0469,18.2812 70.6111,18.75 71.6453,18.75 L84.2433,18.75 L84.2433,14.7187 L71.6453,14.7187 C70.5171,14.7187 70.0469,15.2812 70.0469,16.3125 L70.0469,17.1563 L70.0469,17.1562 Z M97.2196,8.9998 L97.2196,18.7498 L109.8186,18.7498 C110.9468,18.7498 111.4169,18.1873 111.4169,17.1561 L111.4169,10.6873 C111.4169,9.5623 110.8528,9.0936 109.8185,9.0936 L97.2196,8.9998 Z M29.8059,17.1562 C29.8059,18.2812 30.3701,18.75 31.4043,18.75 L44.0033,18.75 L44.0033,14.7187 L31.4043,14.7187 C30.276,14.7187 29.8059,15.2812 29.8059,16.3125 L29.8059,17.1563 L29.8059,17.1562 Z M17.9581,18.6563 L17.9581,9.0001 L5.36,9.0001 C4.2318,9.0001 3.7617,9.5626 3.7617,10.5938 L3.7617,17.0626 C3.7617,18.1876 4.3258,18.6563 5.3601,18.6563 L17.9581,18.6563 Z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
 					</div>
 				</div>
 			</section>
